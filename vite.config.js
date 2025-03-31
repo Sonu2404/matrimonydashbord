@@ -1,7 +1,9 @@
-export default {
+import { defineConfig } from 'vite';
+
+export default defineConfig({
   build: {
     rollupOptions: {
-      input: './src/main.js'
+      input: './src/index.js' // Replace with your actual entry file path
     }
   }
-}
+});
