@@ -11,7 +11,6 @@ import Analytics from "./components/analytics/Analytics";
 import SettingsPage from "./pages/SettingsPage";
 import CustomerPages from "./pages/CustomerPages";
 import MailsPage from "./pages/MailsPage";
-import "./App.css";
 import { useState } from "react";
 import Eventmain from "./components/event/eventmain/Eventmain";
 import Addevent from "./components/event/addevent/Addevent";
@@ -32,6 +31,7 @@ import PricingMain from "./components/pricing/pricingmain/Pricingmain";
 import PricingForm from "./components/pricing/pricingform/Pricingform";
 import PricingPlans from "./components/pricing/pricingPlans/PricingPlans";
 import VendorDetail from "./components/vendormain/vendordetail/Vendordetail";
+import "./App.css";
 
 function App() {
   const [sidebarVisible, setSidebarVisible] = useState(false);
