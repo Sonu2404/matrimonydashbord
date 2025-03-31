@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Menu, MenuItem, IconButton } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Link, useNavigate } from "react-router-dom";
-import styles from "./PricingMain.module.css";
+import styles from "./Pricingmain.module.css";
 
 const PricingMain = () => {
   const [plans, setPlans] = useState([]);
