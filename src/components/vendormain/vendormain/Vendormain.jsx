@@ -5,7 +5,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { Dialog, DialogTitle, DialogContent, DialogActions, Button, Menu, MenuItem, IconButton } from "@mui/material";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import { Link, useNavigate } from "react-router-dom";
-import styles from "./VendorMain.module.css";
+import styles from "./Vendormain.module.css";
 
 const Data = {
   themeOptions: {
