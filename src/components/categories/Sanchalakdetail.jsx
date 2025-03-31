@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa"; // Import social media icons
-import styles from "./sanchalakDetail.module.css";
+import styles from "./sanchalakdetail.module.css";
 
 const MemberDetail = () => {
   const { id } = useParams();
