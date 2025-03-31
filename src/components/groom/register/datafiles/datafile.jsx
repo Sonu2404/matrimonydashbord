@@ -20,9 +20,13 @@ export const initialFormData = {
     annualIncome: ''
   };
   
-  export const educationLevels = ["- Please Select -", "Bachelor's", "Master's", "PhD", "Associate's"];
-  export const educationFields = ["- Please Select -", "Engineering", "Medicine", "Arts", "Business", "Science", "Law"];
-  export const occupations = ["- Please Select -", "Engineer", "Doctor", "Teacher", "Artist", "Business Owner", "Lawyer", "Scientist"];
+  export const educationLevels = ["High School", "Diploma", "Bachelors", "Masters", "Doctorate",  "Master's", "PhD", "Associate's",  "Other"];
+  export const educationFields = ["Engineering", "Medicine", "IT", "Law", "Commerce", "Advertising", "Architecture",
+     "Armed Forces", "Fashion", "Finance", "Fine Arts", "Home Science", "Management", "Nursing", "Science", "Travel & Tourism", "Other"];
+  export const occupations = ["Engineer", "Doctor", "Teacher", "IT Professional", "Accountant", "Architect", "Banking", "Business",
+     "Chartered Accountant", "Civil Services", "Consultant", "Customer Service", "Defense Services", "Government Service", "HR Manager", "Lawyer", "Marketing", "Merchant Navy", "Nurse", 
+     "Pharmacist", "Professor", "Project Management", "Real Estate", "Research Scholar", "Retired", "Sales", "Scientist", "Self-Employed",
+      "Software Professional", "Student", "Teacher", "Volunteer", "Web Developer", "Other"];
   export const bloodGroups = ["- Please Select -", "A+", "B+", "O+", "AB+", "A-", "B-", "O-", "AB-"];
   export const complexions = ["- Please Select -", "Fair", "Wheatish", "Dark", "Medium"];
   export const bodyTypes = ["- Please Select -", "Slim", "Athletic", "Average", "Heavy", "Muscular"];
