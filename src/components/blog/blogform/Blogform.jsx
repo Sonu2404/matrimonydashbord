@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import axios from "axios";
-import styles from "./blogform.module.css"; // Assuming you'll create a similar CSS
+import styles from "./Blogform.module.css"; // Assuming you'll create a similar CSS
 
 const Addblog = () => {
   const { id } = useParams(); // Get blog ID from URL if editing
