@@ -3,5 +3,5 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  base: "./",  // Ensure correct asset loading
+  base: "./", // Ensures assets load correctly
 });
