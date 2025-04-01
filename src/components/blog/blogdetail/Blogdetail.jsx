@@ -12,7 +12,7 @@ const Blogdetail = () => {
     const fetchBlog = async () => {
       try {
         setError(null);
-        const response = await fetch(`http://localhost:8000/api/v1/blogs/${id}`);
+        const response = await fetch(`https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/${id}`);
         if (!response.ok) throw new Error("Failed to fetch blog details");
 
         const result = await response.json();

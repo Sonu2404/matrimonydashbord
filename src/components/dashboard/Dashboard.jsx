@@ -16,7 +16,7 @@ const Dashboard = () => {
 
   const fetchCounts = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/bride-groom/gender-counts");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom/gender-counts");
       if (response.data.success) {
         setCounts({
           male: response.data.data.male,
@@ -33,7 +33,7 @@ const Dashboard = () => {
 
   const fetchMonthlyData = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/bride-groom/monthly-stats");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom/monthly-stats");
       if (response.data.success) {
         setMonthlyData(response.data.data);
       }

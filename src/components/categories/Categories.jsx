@@ -40,7 +40,7 @@ const SanchalakMain = () => {
   // Fetching Sanchalaks from the backend
   const fetchSanchalaks = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/sanchalak");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/sanchalak");
       setSanchalaks(response.data.data);  // Assuming the response contains `data`
       setLoading(false);
     } catch (err) {
@@ -76,7 +76,7 @@ const SanchalakMain = () => {
   // Handling the deletion of a Sanchalak
   const handleDeleteConfirm = async () => {
     try {
-      await axios.delete(`http://localhost:8000/api/v1/sanchalak/${selectedSanchalak._id}`);
+      await axios.delete(`https://matrimonybackend-nd5n.onrender.com/api/v1/sanchalak/${selectedSanchalak._id}`);
       setSanchalaks(sanchalaks.filter((s) => s._id !== selectedSanchalak._id));
       handleDialogClose();
     } catch (err) {

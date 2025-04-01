@@ -29,7 +29,7 @@ const Eventmain = () => {
 
   const fetchEvents = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/events");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/events");
       setEvents(response.data.data);
       setLoading(false);
     } catch (err) {

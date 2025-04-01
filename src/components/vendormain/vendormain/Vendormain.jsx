@@ -29,7 +29,7 @@ const VendorMain = () => {
 
   const fetchVendors = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/vendors");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/vendors");
       setVendors(response.data.data);
       setLoading(false);
     } catch (err) {

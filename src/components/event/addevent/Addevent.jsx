@@ -27,7 +27,7 @@ const Addevent = () => {
       setIsEditing(true);
       setLoading(true);
       axios
-        .get(`http://localhost:8000/api/v1/events/${id}`)
+        .get(`https://matrimonybackend-nd5n.onrender.com/api/v1/events/${id}`)
         .then((response) => {
           const event = response.data.data;
           if (event) {

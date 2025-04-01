@@ -78,7 +78,7 @@ const Groommain = () => {
     if (selectedRow) {
       try {
         await axios.delete(
-          `http://localhost:8000/api/v1/bride-groom/${selectedRow._id}`
+          `https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom/${selectedRow._id}`
         );
         fetchData(); // Refresh data after delete
         closePopup();

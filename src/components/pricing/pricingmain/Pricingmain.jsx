@@ -20,7 +20,7 @@ const PricingMain = () => {
 
   const fetchPlans = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/pricing");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/pricing");
       setPlans(response.data.data);
       setLoading(false);
     } catch (err) {

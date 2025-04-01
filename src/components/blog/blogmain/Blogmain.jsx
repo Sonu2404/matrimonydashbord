@@ -38,7 +38,7 @@ const Blogmain = () => {
 
   const fetchBlogs = async () => {
     try {
-      const response = await axios.get("http://localhost:8000/api/v1/blogs");
+      const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/blogs");
       setBlogs(response.data.data);
       setLoading(false);
     } catch (err) {
@@ -73,7 +73,7 @@ const Blogmain = () => {
 
   const handleDeleteConfirm = async () => {
     try {
-      await axios.delete(`http://localhost:8000/api/v1/blogs/${selectedBlog._id}`);
+      await axios.delete(`https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/${selectedBlog._id}`);
       setBlogs(blogs.filter((b) => b._id !== selectedBlog._id));
       handleDialogClose();
     } catch (err) {

@@ -32,7 +32,7 @@ const Sanchalakform = () => {
       setIsEditing(true);
       setLoading(true);
       axios
-        .get(`http://localhost:8000/api/v1/sanchalak/${id}`)
+        .get(`https://matrimonybackend-nd5n.onrender.com/api/v1/sanchalak/${id}`)
         .then((response) => {
           console.log("Fetched data:", response.data);
           // Populate the form data with the response data
@@ -133,14 +133,14 @@ const Sanchalakform = () => {
       setLoading(true);
       if (isEditing) {
         await axios.put(
-          `http://localhost:8000/api/v1/sanchalak/${id}`,
+          `https://matrimonybackend-nd5n.onrender.com/api/v1/sanchalak/${id}`,
           formDataToSend,
           { headers: { "Content-Type": "multipart/form-data" } }
         );
         alert("Sanchalak updated successfully!");
       } else {
         await axios.post(
-          "http://localhost:8000/api/v1/sanchalak/create",
+          "https://matrimonybackend-nd5n.onrender.com/api/v1/sanchalak/create",
           formDataToSend,
           { headers: { "Content-Type": "multipart/form-data" } }
         );

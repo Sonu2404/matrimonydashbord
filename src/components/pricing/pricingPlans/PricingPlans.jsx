@@ -11,7 +11,7 @@ const PricingPlans = () => {
   useEffect(() => {
     const fetchPricingPlans = async () => {
       try {
-        const response = await axios.get("http://localhost:8000/api/v1/Pricing"); 
+        const response = await axios.get("https://matrimonybackend-nd5n.onrender.com/api/v1/Pricing"); 
         setPricingPlans(response.data.data); // Ensure API returns { success: true, data: [...] }
       } catch (err) {
         console.error("Error fetching pricing plans:", err);

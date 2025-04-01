@@ -23,7 +23,7 @@ const ProfileComponent = () => {
   useEffect(() => {
     const fetchProfile = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/v1/bride-groom/${id}`);
+        const response = await fetch(`https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom/${id}`);
         const data = await response.json();
         if (data.success) {
           data.data.dateOfBirth = formatDate(data.data.dateOfBirth);

@@ -21,7 +21,7 @@ const Addimage = () => {
     formData.append("imageevent", image);
 
     try {
-      const response = await fetch("http://localhost:8000/api/v1/eventimage/create", {
+      const response = await fetch("https://matrimonybackend-nd5n.onrender.com/api/v1/eventimage/create", {
         method: "POST",
         body: formData,
       });

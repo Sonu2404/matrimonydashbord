@@ -26,7 +26,7 @@ const Addblog = () => {
       setIsEditing(true);
       setLoading(true);
       axios
-        .get(`http://localhost:8000/api/v1/blogs/${id}`)
+        .get(`https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/${id}`)
         .then((response) => {
           const blog = response.data.data;
           if (blog) {
@@ -83,13 +83,13 @@ const Addblog = () => {
     setLoading(true);
     if (isEditing) {
       // Update blog (PUT request)
-      await axios.put(`http://localhost:8000/api/v1/blogs/${id}`, formDataToSend, {
+      await axios.put(`https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/${id}`, formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Blog updated successfully!");
     } else {
       // Create new blog (POST request)
-      await axios.post("http://localhost:8000/api/v1/blogs/create", formDataToSend, {
+      await axios.post("https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/create", formDataToSend, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       alert("Blog created successfully!");
@@ -114,7 +114,7 @@ const Addblog = () => {
     if (confirmDelete) {
       try {
         setLoading(true);
-        await axios.delete(`http://localhost:8000/api/v1/blogs/${id}`);
+        await axios.delete(`https://matrimonybackend-nd5n.onrender.com/api/v1/blogs/${id}`);
         alert("Blog deleted successfully!");
         navigate("/blogs"); // Redirect to blog list after deletion
       } catch (error) {

@@ -21,7 +21,7 @@ const PricingForm = () => {
       // Editing an existing plan: Fetch plan data
       const fetchPlan = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/v1/pricing/${id}`);
+          const response = await axios.get(`https://matrimonybackend-nd5n.onrender.com/api/v1/pricing/${id}`);
           setFormData({
             title: response.data.data.title, // Use the title from the API response
             price: response.data.data.price,

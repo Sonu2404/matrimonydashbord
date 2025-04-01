@@ -30,7 +30,7 @@ const Product = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        "http://localhost:8000/api/v1/bride-groom?gender=female"
+        "https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom?gender=female"
       );
       setData(response.data.data);
       setIsLoading(false);
@@ -79,7 +79,7 @@ const Product = () => {
     if (selectedRow) {
       try {
         await axios.delete(
-          `http://localhost:8000/api/v1/bride-groom/${selectedRow._id}`
+          `https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom/${selectedRow._id}`
         );
         fetchData();
         closePopup();

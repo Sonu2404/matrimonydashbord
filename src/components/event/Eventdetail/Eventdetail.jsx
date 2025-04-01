@@ -11,7 +11,7 @@ const Eventsdetail = () => {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const response = await fetch(`http://localhost:8000/api/v1/events/${id}`);
+        const response = await fetch(`https://matrimonybackend-nd5n.onrender.com/api/v1/events/${id}`);
         const data = await response.json();
         if (data.success) {
           setEvent(data.data); // Populate event details

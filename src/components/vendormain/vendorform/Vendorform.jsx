@@ -26,7 +26,7 @@ const VendorForm = () => {
     if (id) {
       const fetchVendor = async () => {
         try {
-          const response = await axios.get(`http://localhost:8000/api/v1/vendors/${id}`);
+          const response = await axios.get(`https://matrimonybackend-nd5n.onrender.com/api/v1/vendors/${id}`);
           const data = response.data.data;
           setVendorData({
             ...data,
