@@ -30,7 +30,7 @@ const Groommain = () => {
     try {
       setIsLoading(true);
       const response = await axios.get(
-        "http://localhost:8000/api/v1/bride-groom?gender=male"
+        "https://matrimonybackend-nd5n.onrender.com/api/v1/bride-groom?gender=male"
       );
       setData(response.data.data);
       setIsLoading(false);
